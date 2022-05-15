@@ -6,6 +6,41 @@
       "name": "Kenzinho",
       "age": 38,
       "id": 1
+    },
+    {
+      "email": "miona@gmail.com",
+      "password": "$2a$10$e3XvYCoMbxXlSgEMxGvz2.XqQbXIvIb16MUSiIxBBNKlWgqTnHmNG",
+      "age": "6meses",
+      "id": 2
+    },
+    {
+      "email": "gustavo@gmail.com",
+      "password": "$2a$10$iK61Fipr37X2MXjBnutkheKghIfvNBukUxX0Yyh5.vdEIJz9EW6Mi",
+      "id": 3
+    }
+  ],
+  "projects": [
+    {
+      "name": "corpomaquina",
+      "type": "technology",
+      "userId": 2,
+      "id": 1
+    },
+    {
+      "name": "pj.5",
+      "type": "technology",
+      "userId": 3,
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "comment": "ola"
+    },
+    {
+      "comment": "Muito bom esse projeto",
+      "id": 2
     }
   ]
 }
