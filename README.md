@@ -22,3 +22,47 @@ POST /login <br/>
 POST /signin
 
 Qualquer um desses 2 endpoints pode ser usado para realizar login com um dos usuários cadastrados na lista de "Users"
+
+
+### Projects
+
+POST /projects
+
+Esse endpoint ira cadastrar os projetos realizados pelos usuarios logados.
+Exemplo:
+body: {
+      "name": "corpomaquina",
+      "type": "technology",
+      "userId": 2
+    }
+
+authorization: {
+    "Bearer": "token"
+}
+
+Get /projects
+
+Ira mostrar todos os projetos cadastrados, tanto para usuarios logados quanto para nao logados. 
+
+Status: 200-ok
+        401-UNAUTHORIZED
+
+### Comments
+
+POST /comments 
+
+body: {
+    "comment": "exemplo"
+}
+
+Esse endpoint voce precisa estar logado para escrever comentarios.
+
+GET /comments
+
+Esse endpoint voce voce precisa estar logado para ler os comentarios.
+authorization: {
+    "Bearer": "token"
+}
+
+Status: 200-ok
+        401-UNAUTHORIZED
